@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-gray-100 font-[Inter]">
+    <header
+      class="fixed top-0 w-full flex justify-between items-center p-4 bg-dark/80 backdrop-blur z-50 border-b border-white/5"
+    >
+      <div class="logo font-bold text-xl">
+        <i class="fa-solid fa-code mr-2 text-emerald-300"></i>Meet Modasiya
+      </div>
+      <nav>
+        <ul class="hidden md:flex gap-6">
+          <li>
+            <a href="#home" class="hover:text-green-400 transition-colors"
+              >Home</a
+            >
+          </li>
+          <li class="flex items-center gap-2">
+            <a
+              href="Meet%20Modasiya%20Resume%20Faang.pdf"
+              target="_blank"
+              rel="noopener"
+              class="hover:text-green-400 transition-colors"
+              >Resume</a
+            >
+            <a
+              href="Meet%20Modasiya%20Resume%20Faang.pdf"
+              download
+              title="Download Resume"
+              class="text-gray-400 hover:text-green-400 transition-colors"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-green-400 transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-green-400 transition-colors"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-green-400 transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="md:hidden cursor-pointer text-2xl"
+          id="hamburger"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+      </nav>
+    </header>
+
+    <div
+      id="mobileMenu"
+      class="md:hidden fixed top-16 inset-x-0 mx-4 rounded-lg border border-slate-200 bg-white/95 backdrop-blur p-4 hidden shadow-lg"
+    >
+      <a href="#home" class="block py-2 hover:text-emerald-600">Home</a>
+      <a
+        href="Meet%20Modasiya%20Resume%20Faang.pdf"
+        target="_blank"
+        rel="noopener"
+        class="block py-2 hover:text-emerald-600"
+        >Resume</a
+      >
+      <a
+        href="Meet%20Modasiya%20Resume%20Faang.pdf"
+        download
+        class="block py-2 hover:text-emerald-600"
+        >Download Resume</a
+      >
+      <a href="#about" class="block py-2 hover:text-emerald-600">About</a>
+      <a href="#projects" class="block py-2 hover:text-emerald-600">Projects</a>
+      <a href="#contact" class="block py-2 hover:text-emerald-600">Contact</a>
+    </div>
+
+    <main class="pt-20">
+      <section
+        id="home"
+        class="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-[radial-gradient(ellipse_at_top_right,_rgba(16,185,129,0.12),_transparent_60%)] [background-size:16px_16px] lg:[mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%)"
+      >
+        <h1
+          class="text-5xl md:text-6xl font-bold text-white bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300 reveal"
+          data-reveal="fade-up"
+          style="--delay: 0ms"
+        >
+          Building the Future, Line by Line
+        </h1>
+        <p
+          class="mt-4 text-lg md:text-xl max-w-2xl text-gray-300 reveal"
+          data-reveal="fade-up"
+          style="--delay: 120ms"
+        >
+          Hi, I'm Meet, a frontend & backend developer passionate about building
+          apps.
+        </p>
+        <div
+          class="mt-6 flex flex-col sm:flex-row gap-4 reveal"
+          data-reveal="scale-in"
+          style="--delay: 220ms"
+        >
+          <a
+            href="#projects"
+            class="px-6 py-3 rounded-lg bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 text-white shadow-lg shadow-green-900/30 hover:shadow-green-800/40 transition-all"
+            ><i class="fa-solid fa-folder-open mr-2"></i>See Projects</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-3 rounded-lg border border-green-500/70 hover:bg-green-600 hover:text-white transition-all hover:shadow-md hover:shadow-green-900/30"
+            ><i class="fa-solid fa-paper-plane mr-2"></i>Contact</a
+          >
+        </div>
+      </section>
+
+      <section
+        id="about"
+        class="py-20 px-4 max-w-5xl mx-auto "
+      >
+        <h2
+          class="text-3xl font-semibold mb-6 reveal bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-500"
+          data-reveal="fade-up"
+        >
+          <i class="fa-solid fa-user mr-2 text-emerald-500"></i>About
+        </h2>
+        <p
+          class="text-slate-600 reveal"
+          data-reveal="fade-in"
+          style="--delay: 120ms"
+        >
+          I am Meet Modasiya from Vadodara, a postgraduate in Master of Computer
+          Applications (MCA). With a strong foundation in software development
+          and web technologies, I specialize in creating scalable, user-friendly
+          applications. My focus lies in full-stack development,
+          problem-solving, and continuous learning, ensuring I stay updated with
+          modern tools and frameworks
+        </p>
+      </section>
+
+      <section id="tech" class="py-20 px-4 max-w-5xl mx-auto">
+        <h2
+          class="text-3xl font-semibold mb-6 reveal bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-cyan-500"
+          data-reveal="fade-up"
+        >
+          <i class="fa-solid fa-laptop-code mr-2 text-emerald-500"></i>Tech
+          Stack
+        </h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 0ms"
+          ><i class="fa-brands fa-html5"></i>
+            HTML5
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 80ms"
+          ><i class="fa-brands fa-css3"></i>
+            CSS3 / Tailwind
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 160ms"
+          ><i class="fa-brands fa-js"></i>
+            JavaScript
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          ><i class="fa-brands fa-react"></i>
+            React
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          ><i class="fa-brands fa-php"></i>
+            PHP
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          ><i class="fa-solid fa-server"></i>
+            MySQL
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          ><i class="fa-solid fa-laptop-code"></i>
+            .NET
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          ><i class="fa-brands fa-bootstrap"></i>
+            BootStrap
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          ><i class="fa-brands fa-shopify"></i>
+            Shopify
+          </div>
+          <div
+            class="p-4 rounded-lg border border-white/10 reveal hover:scale-[1.02] transition-transform hover:border-emerald-400/40"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          ><i class="fa-solid fa-camera"></i>
+            Illustrator
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <!-- I don't have any experience yet, so I'm commenting out the experience section -->
+      <!-- <section id="experience" class="py-20 px-4 max-w-5xl mx-auto">
+        <h2
+          class="text-3xl font-semibold mb-6 reveal bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-emerald-300"
+          data-reveal="fade-up"
+        >
+          <i class="fa-solid fa-briefcase mr-2 text-emerald-300"></i>Experience
+        </h2>
+        <ul class="space-y-4">
+          <li
+            class="rounded-lg border border-white/10 p-4 reveal"
+            data-reveal="fade-up"
+            style="--delay: 0ms"
+          >
+            Role @ Company — Summary of achievements.
+          </li>
+          <li
+            class="rounded-lg border border-white/10 p-4 reveal"
+            data-reveal="fade-up"
+            style="--delay: 120ms"
+          >
+            Role @ Company — Summary of achievements.
+          </li>
+        </ul>
+      </section> -->
+
+      <section
+        id="projects"
+        class="py-20 px-4 max-w-6xl mx-auto relative overflow-hidden"
+      >
+        <div
+          class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(34,197,94,0.08),_transparent_60%)]"
+          data-parallax="0.2"
+        ></div>
+        <h2
+          class="text-3xl font-semibold mb-6 reveal bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-green-200"
+          data-reveal="fade-up"
+        >
+          <i class="fa-solid fa-diagram-project mr-2 text-emerald-300"></i
+          >Projects
+        </h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Lotsy -->
+
+          <article
+            class="rounded-xl border border-white/10 overflow-hidden hover:border-emerald-400/50 transition-all hover:shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-0.5 reveal"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          >
+            <div class="aspect-video bg-neutral-800">
+              <img
+                src="assets/Lotsy.jpeg"
+                alt="Zentry Demo preview"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold">Lotsy</h3>
+              <p class="text-sm text-gray-400">Live E-Commerce Website</p>
+              <a
+                href="https://www.lotsy.in/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block mt-3 px-3 py-2 rounded-md border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10 transition-colors"
+                >Visit Demo</a
+              >
+            </div>
+          </article>
+
+
+          <!-- FoxPlay  -->
+          <article
+            class="rounded-xl border border-white/10 overflow-hidden hover:border-emerald-400/50 transition-all hover:shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-0.5 reveal"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          >
+            <div class="aspect-video h-min
+            bg-neutral-800">
+              <img
+                src="assets/Foxplay.jpg"
+                alt="Zentry Demo preview"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold">FoxPlay Clothing</h3>
+              <p class="text-sm text-gray-400">Live E-Commerce Clothing Website</p>
+              <a
+                href="https://www.foxplayclothing.com/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block mt-3 px-3 py-2 rounded-md border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10 transition-colors"
+                >Visit Demo</a
+              >
+            </div>
+          </article>
+
+          <!-- Zentry -->
+
+          <article
+            class="rounded-xl border border-white/10 overflow-hidden hover:border-emerald-400/50 transition-all hover:shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-0.5 reveal"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          >
+            <div class="aspect-video bg-neutral-800">
+              <img
+                src="assets/zentry.jpg"
+                alt="Zentry Demo preview"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold">Zentry Demo</h3>
+              <p class="text-sm text-gray-400">
+                Interactive demo deployed on Netlify.
+              </p>
+              <a
+                href="https://68a30e3bf9648613a607c9e7--zentrydemo.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block mt-3 px-3 py-2 rounded-md border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10 transition-colors"
+                >Visit Demo</a
+              >
+            </div>
+          </article>
+
+          <!-- Dragon Game  -->
+
+          <article
+            class="rounded-xl border border-white/10 overflow-hidden hover:border-emerald-400/50 transition-all hover:shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-0.5 reveal"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          >
+            <div class="aspect-video bg-neutral-800">
+              <img
+                src="assets/Dragon.jpg"
+                alt="Game Demo preview"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold">Simple Dragon Game</h3>
+              <p class="text-sm text-gray-400">Dragon Attack Game</p>
+              <a
+                href="https://68de8440f5d2254e071fd35f--fabulous-baklava-b4c6c1.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block mt-3 px-3 py-2 rounded-md border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10 transition-colors"
+                >Visit Demo</a
+              >
+            </div>
+          </article>
+
+          <!-- Random Color Generator -->
+          <article
+            class="rounded-xl border border-white/10 overflow-hidden hover:border-emerald-400/50 transition-all hover:shadow-lg hover:shadow-emerald-900/20 hover:-translate-y-0.5 reveal"
+            data-reveal="scale-in"
+            style="--delay: 240ms"
+          >
+            <div class="aspect-video bg-neutral-800">
+              <img
+                src="assets/Random Color.webp"
+                alt="Color Generator Demo preview"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold">Random Color Generator</h3>
+              <p class="text-sm text-gray-400">Random Color Generator</p>
+              <a
+                href="https://68de84f7f5d22555471fd000--illustrious-alfajores-63ab7d.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                class="inline-block mt-3 px-3 py-2 rounded-md border border-emerald-400/40 text-emerald-300 hover:bg-emerald-500/10 transition-colors"
+                >Visit Demo</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 px-4 max-w-3xl mx-auto">
+        <h2
+          class="text-3xl font-semibold mb-6 reveal bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-emerald-300"
+          data-reveal="fade-up"
+        >
+          <i class="fa-solid fa-envelope mr-2 text-emerald-300"></i>Contact
+        </h2>
+        <form
+          action="https://formsubmit.co/modasiyameet23@gmail.com"
+          method="POST"
+          class="space-y-4 reveal"
+          data-reveal="fade-in"
+          style="--delay: 120ms"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full px-4 py-3 rounded-lg bg-neutral-900 border border-white/10 focus:border-green-500 outline-none"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="w-full px-4 py-3 rounded-lg bg-neutral-900 border border-white/10 focus:border-green-500 outline-none"
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            rows="5"
+            required
+            class="w-full px-4 py-3 rounded-lg bg-neutral-900 border border-white/10 focus:border-green-500 outline-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="px-6 py-3 rounded-lg bg-green-500 hover:bg-green-600"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="py-8 text-center text-sm text-gray-500">
+      © <span id="year"></span> @Meet Modasiya
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
